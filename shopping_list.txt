@@ -3,3 +3,4 @@ chocolate x 2
 coffe x 10
 chicken x 100
 cheese x 2
+rice x 5
