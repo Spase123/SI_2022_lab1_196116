@@ -1,5 +1,5 @@
 bread x 1
-chocolate x 2
+chocolate x 10
 coffe x 10
 peanut butter x 100
 cheese x 2
