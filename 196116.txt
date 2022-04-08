@@ -1,0 +1,155 @@
+4.$ git clone https://github.com/Spase123/SI_2022_lab1_196116
+-Kreirame kopija na nasiot lokalen ured od github
+5.$ notepad shopping_list.txt
+-Kreirame datoteka shopping_list.txt
+$ git add shopping_list.txt
+-Ja stavame datotekata vo staged aread
+$ git commit -m "Add 5 items to the shopping list"
+-Pravime screenshot so porakata "Add 5 items to the shopping list"
+6.$ git commit -a -m "Add quantities to the items"
+-Isto kako da sme napravile git add pa potoa git commit -m
+7.$ git branch branch1
+-Se kreira nova granka imenuvana branch1
+$ git branch branch2
+-Se kreira nova granka imenuvana branch2
+8.$ git log
+-Ni dava istorija sto sme napravile vo repozitoriumot
+commit 0738cd4d58c5b7080a2c58a03760a5cdbcb3cf59 (HEAD -> master, branch2, branch1)
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:03:45 2022 +0200
+
+    Add quantities to the items
+
+commit 4ce73f888163ae8a72550a1d5b734dbb7c3997a2
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:00:09 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 0ab3a58386effa10455186670d052f17aa80b345 (origin/master, origin/HEAD)
+Author: Spase123 <58428490+Spase123@users.noreply.github.com>
+Date:   Fri Apr 8 18:37:39 2022 +0200
+
+    Update README.md
+
+commit ff7f2ba6ab2b52cef82455fdec1cd0718a3733e0
+Author: Spase123 <58428490+Spase123@users.noreply.github.com>
+Date:   Fri Apr 8 18:37:01 2022 +0200
+
+9.git push
+git push --set-upstream origin branch1
+git push --set-upstream origin branch2
+10.git checkout branch1
+-Se prefrluvame na grankata branch1
+11.$ git commit -a -m "Change quantity of item #5"
+12.git checkout master
+13.$ git commit -a -m "Change quantity of item #2"
+14.git push
+15.git checkout branch2
+-Se prefrluvame na granka branch2
+16.$ git commit -a -m "Modify item #4"
+-Isto kako da sme napisale git add pa potoa git commit -m
+17.$ git log
+commit 876305bbcad76238ec871704bedb3b769e8c35bf (HEAD -> branch2)
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:38:48 2022 +0200
+
+    Modify item #4
+
+commit 0738cd4d58c5b7080a2c58a03760a5cdbcb3cf59 (origin/branch2)
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:03:45 2022 +0200
+
+    Add quantities to the items
+
+commit 4ce73f888163ae8a72550a1d5b734dbb7c3997a2
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:00:09 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 0ab3a58386effa10455186670d052f17aa80b345
+Author: Spase123 <58428490+Spase123@users.noreply.github.com>
+Date:   Fri Apr 8 18:37:39 2022 +0200
+
+    Update README.md
+:
+18.$ git commit --amend -m "Modify item #4 and add item #6"
+Ja menuvame porakata na poslednio napraven commit
+19.$ git log
+commit 876305bbcad76238ec871704bedb3b769e8c35bf (HEAD -> branch2)
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:38:48 2022 +0200
+
+    Modify item #4
+
+commit 0738cd4d58c5b7080a2c58a03760a5cdbcb3cf59 (origin/branch2)
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:03:45 2022 +0200
+
+    Add quantities to the items
+
+commit 4ce73f888163ae8a72550a1d5b734dbb7c3997a2
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:00:09 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 0ab3a58386effa10455186670d052f17aa80b345
+Author: Spase123 <58428490+Spase123@users.noreply.github.com>
+Date:   Fri Apr 8 18:37:39 2022 +0200
+
+    Update README.md
+
+commit ff7f2ba6ab2b52cef82455fdec1cd0718a3733e0
+Author: Spase123 <58428490+Spase123@users.noreply.github.com>
+Date:   Fri Apr 8 18:37:01 2022 +0200
+
+    Initial commit
+
+FUJITSU@DESKTOP-TDUSHIM MINGW64 ~/lab1/SI_2022_lab1_196116 (branch2)
+$ git commit --amend -m "Modify item #4 and add item #6"
+[branch2 97beb9a] Modify item #4 and add item #6
+ Date: Fri Apr 8 19:38:48 2022 +0200
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+FUJITSU@DESKTOP-TDUSHIM MINGW64 ~/lab1/SI_2022_lab1_196116 (branch2)
+$ git log
+commit 97beb9a53b265088e026b324e53d3971841415ba (HEAD -> branch2)
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:38:48 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 0738cd4d58c5b7080a2c58a03760a5cdbcb3cf59 (origin/branch2)
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:03:45 2022 +0200
+
+    Add quantities to the items
+
+commit 4ce73f888163ae8a72550a1d5b734dbb7c3997a2
+Author: Spase Kostadinski <spase.kostadinski26@hotmail.com>
+Date:   Fri Apr 8 19:00:09 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 0ab3a58386effa10455186670d052f17aa80b345
+Author: Spase123 <58428490+Spase123@users.noreply.github.com>
+Date:   Fri Apr 8 18:37:39 2022 +0200
+
+    Update README.md
+:
+20.git checkout master
+se prefluvame na granka master
+$ git merge branch1
+se spojuva master so branch1
+Objasnuvanje:
+Nemase konfikti pri spojuvanje na master i branch1 grankata bese upotrebena strategijata za fast-forward 
+21.$ git merge branch2
+se spojuva master so branch2
+Objasnuvanje:
+Imase konfikt pri spojuvanje na master i branch2 grankata konfiktot go resiv taka sto gi prifativ promenite of branch2 grankata
+
+
+
+
